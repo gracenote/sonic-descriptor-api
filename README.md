@@ -22,13 +22,15 @@ Request APIKEY for Sonic Descriptor API access. Please contact Gracenote GMD pro
 |-|-|-|-|
 | GN.GMD.package | Optional | Discovery \| advancedDiscovery (Discovery) | Discovery package only receives top sonic descriptor with ID, genericName and localized labels; while Advanced Discovery package receives the whole depth of descriptors |
 
+*You do not have to specify header for your query, it goes with your APIKEY, please contact Gracenote GMD product team for your required package.*
+
 ## Response
 
 ### Response fields
 | Field | Description |
 |-|-|
-| Meta | Showing the track objects total number, count and offset |
-| Data | Showing the detailed track objects |
+| Meta | the meta filed showing the track objects total number, count and offset |
+| Data | the data filed for detailed track objects |
 
 ### Meta
 | Field | Description |
@@ -56,7 +58,7 @@ Request APIKEY for Sonic Descriptor API access. Please contact Gracenote GMD pro
 
 ### request
 ```
-curl -H "GN.GMD.package: advancedDiscovery" -i "https://api.gmd.music.gracenote.com/v1.1/tracks/isrc?id=USUM72013355&apikey={apikey}}"
+curl "https://api.gmd.music.gracenote.com/v1.1/tracks/isrc?id=USUM72013355&apikey={apikey}"
 ```
 
 ### response
