@@ -1,6 +1,11 @@
 # sonic-descriptor-api
 
-## prerequisites
+## Summary
+The Sonic Descriptor API is an endpoint of Gracenote’s GMD API, which allows customers to look up Recording-level Sonic descriptors such as Mood, Style, and Tempo (where available) given an ISRC. We suggest that customers use this endpoint to retrieve descriptors for New Releases which may not yet be available in either of the GMD API’s Recording endpoints, but revert back to the Recording endpoints once the track has been normalized into a Recording.
+Note that returned objects are based on what packages and add ons a customer is licensed to receive.
+
+
+## Prerequisites
 A GMD API key is required to access the Sonic Descriptor API. For more information, please contact your Gracenote representative.
 
 ## Request
